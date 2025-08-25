@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Define que este é um documento HTML5 -->
+<html lang="pt-BR">
+<!-- Define a linguagem do conteúdo como Português do Brasil -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define o conjunto de caracteres como UTF-8, que suporta acentuação e caracteres especiais -->
+
+  <title>Nota Fiscal</title>
+  <!-- Título da página exibido na aba do navegador -->
+
+  <style>
+    /* Estilos CSS aplicados à nota fiscal */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 100px;
+      color: #333;
+    }
+    /* Define a fonte, margens e cor padrão do texto da página */
+
+    .nota-fiscal {
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    /* Estilo da caixa principal da nota fiscal: largura máxima, centralizada, com borda e espaçamento interno */
+
+    h1 {
+      text-align: center;
+    }
+    /* Centraliza o título principal */
+
+    .empresa, .cliente {
+      margin-bottom: 20px;
+    }
+    /* Espaço inferior entre as seções da empresa e do cliente */
+
+    .dados {
+      display: flex;
+      justify-content: space-between;
+    }
+    /* Organiza os dados (data e número da nota) em linha com espaço entre eles */
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    /* Define que a tabela ocupará toda a largura disponível e remove espaçamento entre as bordas das células */
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    /* Define bordas para a tabela, cabeçalhos e células */
+
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+    /* Define espaçamento interno e alinhamento à esquerda para células da tabela */
+
+    .total {
+      text-align: right;
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    /* Alinha o valor total à direita e aumenta o tamanho da fonte */
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    /* Estiliza o rodapé da nota fiscal com cor mais suave e centralizado */
+  </style>
+</head>
+
+<body>
+  <!-- Início do conteúdo visível da página -->
+
+  <div class="nota-fiscal">
+    <!-- Div principal contendo toda a nota fiscal -->
+
+    <h1>NOTA FISCAL</h1>
+    <!-- Título da nota fiscal -->
+
+    <div class="empresa">
+      <!-- Seção com os dados da empresa -->
+      <strong>Empresa:</strong> Shopee Ltda<br>
+      CNPJ: 12.345.678/0001-99<br>
+      Endereço: Rua Exemplo, 123 - São Paulo - SP
+    </div>
+
+    <div class="cliente">
+      <!-- Seção com os dados do cliente -->
+      <strong>Cliente:</strong> Lívia Mesquita<br>
+      CPF: 000.000.000-00<br>
+      Endereço: Av. Rua dos Bobos Nº 0 - Belém - PA
+    </div>
+
+    <div class="dados">
+      <!-- Linha com data e número da nota -->
+      <div><strong>Data:</strong> 25/08/2025</div>
+      <div><strong>Nº Nota:</strong> 000123</div>
+    </div>
+
+    <table>
+      <!-- Tabela com os itens da nota fiscal -->
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Descrição</th>
+          <th>Quantidade</th>
+          <th>Valor Unitário</th>
+          <th>Total</th>
+        </tr>
+        <!-- Cabeçalho da tabela com as colunas dos produtos -->
+      </thead>
+      <tbody>
+        <!-- Corpo da tabela com os produtos vendidos -->
+        <tr>
+          <td>001</td>
+          <td>Notebook Dell XPS 13</td>
+          <td>1</td>
+          <td>R$ 6.500,00</td>
+          <td>R$ 6.500,00</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Mouse Logitech MX Master 3</td>
+          <td>1</td>
+          <td>R$ 450,00</td>
+          <td>R$ 450,00</td>
+        </tr>
+        <!-- Exemplo com dois produtos na nota fiscal -->
+      </tbody>
+    </table>
+
+    <div class="total">
+      <!-- Seção com o total geral da nota -->
+      <strong>Total Geral: R$ 6.950,00</strong>
+    </div>
+
+    <div class="footer">
+      <!-- Rodapé com mensagem final -->
+      Obrigado pela sua compra!<br>
+      Esta nota fiscal é válida sem assinatura.
+    </div>
+
+  </div>
+
+</body>
+</html>
+<!-- Fim do documento HTML -->
